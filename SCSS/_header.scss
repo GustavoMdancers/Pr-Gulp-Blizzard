@@ -1,0 +1,60 @@
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  border-bottom: rgba(255, 255, 255, 0.1) 1px solid;
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 9.6rem;
+    .navigation {
+      display: flex;
+      align-items: center;
+      .logo {
+        width: 115.698px;
+        height: 40px;
+      }
+      .nav {
+        margin-left: 11rem;
+        nav {
+          ul {
+            display: flex;
+            li {
+              &:not(:last-child) {
+                margin-right: 3.4rem;
+              }
+              a {
+                color: #fff;
+                text-align: center;
+                font-family: Poppins;
+                font-size: 1.4rem;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                display: flex;
+                img {
+                  margin-left: 1.4rem;
+                  display: inline-block;
+                  transition: all 0.3s;
+                }
+                &:hover {
+                  img {
+                    transform: rotate(180deg);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .buttons {
+      display: flex;
+      gap: 1.6rem;
+    }
+  }
+}
