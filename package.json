@@ -22,7 +22,6 @@
   },
   "dependencies": {
     "aos": "^2.3.4",
-    "browser-sync": "^2.29.3",
-    "swiper": "^10.1.0"
+    "browser-sync": "^2.29.3"
   }
 }
