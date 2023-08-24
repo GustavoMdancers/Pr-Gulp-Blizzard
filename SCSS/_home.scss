@@ -4,7 +4,16 @@
     position: absolute;
     z-index: 2;
     top: 24.1rem;
-    left: 8%;
+    left: 16%;
+    .swiper-wrapper {
+      display: flex;
+      //flex-direction: row;
+      //flex-flow: nowrap;
+      align-items: center;
+      width: fit-content;
+      height: 320px;
+      //gap: 20px;
+    }
   }
   .slideHero {
     width: 100%;
