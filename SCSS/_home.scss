@@ -10,9 +10,24 @@
       //flex-direction: row;
       //flex-flow: nowrap;
       align-items: center;
-      width: fit-content;
+      //width: fit-content;
       height: 320px;
       //gap: 20px;
+      .swiper-slide {
+        width: 4.8rem;
+        height: 4.8rem;
+        cursor: pointer;
+        opacity: 0.4;
+        filter: grayscale(1);
+        transition: all 0.3s;
+        &-thumb-active {
+          filter: grayscale(0);
+          opacity: 1;
+        }
+        &.disabled {
+          pointer-events: none;
+        }
+      }
     }
   }
   .slideHero {

@@ -65,10 +65,10 @@
           <div class="swiper-slide">
             <img src="./img/slider_wow.png" alt="" />
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide disabled">
             <img src="./img/slider_D11.png" alt="" />
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide disabled">
             <img src="./img/slider_starcraft.png" alt="" />
           </div>
         </div>
@@ -190,9 +190,17 @@
       slidesPerView: 5,
       direction: "vertical",
       //spaceBetween: 20,
+      watchSlidesProgress: true,
     });
     var slideHero = new Swiper(".slideHero", {
       effect: "fade",
+      thumbs: {
+        swiper: slideThumb,
+      },
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
     });
   </script>
 </html>
