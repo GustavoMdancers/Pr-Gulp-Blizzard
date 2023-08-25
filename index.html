@@ -55,21 +55,25 @@
     </header>
     <section class="hero">
       <div class="slider">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="./img/slider_D4.png" alt="" />
-          </div>
-          <div class="swiper-slide">
-            <img src="./img/slider_heartstone.png" alt="" />
-          </div>
-          <div class="swiper-slide">
-            <img src="./img/slider_wow.png" alt="" />
-          </div>
-          <div class="swiper-slide disabled">
-            <img src="./img/slider_D11.png" alt="" />
-          </div>
-          <div class="swiper-slide disabled">
-            <img src="./img/slider_starcraft.png" alt="" />
+        <div class="container">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./img/slider_D4.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/slider_heartstone.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/slider_wow.png" alt="" />
+              </div>
+              <div class="swiper-slide disabled">
+                <img src="./img/slider_D11.png" alt="" />
+              </div>
+              <div class="swiper-slide disabled">
+                <img src="./img/slider_starcraft.png" alt="" />
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -133,7 +137,7 @@
                     </div>
                     <img
                       class="thumb default"
-                      src="./img/heartstone-bg.jpg"
+                      src="./img/Optimized-heartstone-bg.jpg"
                       alt=""
                     />
                     <img
@@ -170,7 +174,7 @@
                     </div>
                     <img
                       class="thumb default"
-                      src="./img/trailer_wow.png"
+                      src="./img/Optimized-bg-wow.jpg"
                       alt=""
                     />
                     <img class="thumb hover" src="./img/Gifs/wow.gif" alt="" />
@@ -182,11 +186,27 @@
         </div>
       </div>
     </section>
+    <section class="games">
+      <div class="container">
+        <div class="head">
+          <span>GAMES</span>
+          <div class="consoles">
+            <img src="./img/icon-blizzard.svg" alt="" />
+            <img src="./img/icon-switch.svg" alt="" />
+            <img src="./img/icon-xbox.svg" alt="" />
+            <img src="./img/icon-playstation.png" alt="" />
+          </div>
+          <a href=""
+            ><img src="./img/icon-4sqare.svg" alt="" /> Ver todos os jogos</a
+          >
+        </div>
+      </div>
+    </section>
   </body>
   <script src="./JS/all.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <script>
-    var slideThumb = new Swiper(".slider", {
+    var slideThumb = new Swiper(".swiper", {
       slidesPerView: 5,
       direction: "vertical",
       //spaceBetween: 20,
