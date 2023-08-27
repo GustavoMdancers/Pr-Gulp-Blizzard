@@ -264,5 +264,50 @@
         }
       }
     }
+    .cards {
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 27px 48px;
+        .card {
+          display: flex;
+          flex-direction: column;
+          .image {
+            position: relative;
+            width: 30.8rem;
+            height: 42.2rem;
+            img {
+              position: absolute;
+              &.icon {
+                z-index: 2;
+                left: 7.4rem;
+                top: 26.9rem;
+              }
+              &.background {
+                top: 0;
+                left: 0;
+              }
+            }
+          }
+          .text {
+            margin-top: 1.8rem;
+            h4 {
+              color: #e5e5e5;
+              font-size: 19.35px;
+              font-weight: 600;
+              line-height: normal;
+            }
+            p {
+              color: #e5e5e5;
+              font-family: Poppins;
+              font-size: 15.05px;
+              font-weight: 400;
+              line-height: normal;
+              opacity: 0.8;
+            }
+          }
+        }
+      }
+    }
   }
 }
