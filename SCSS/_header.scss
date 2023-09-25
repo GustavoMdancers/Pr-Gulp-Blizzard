@@ -3,14 +3,31 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 2;
+  z-index: 3;
   border-bottom: rgba(255, 255, 255, 0.1) 1px solid;
+  .hover {
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    background: linear-gradient(
+      180deg,
+      #020203 0%,
+      rgba(14, 17, 23, 0.92) 96.35%,
+      rgba(14, 17, 23, 0.9) 100%
+    );
+    backdrop-filter: blur(6px);
+    .container {
+      height: 640px;
+    }
+  }
   .container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     height: 9.6rem;
+    z-index: 3;
     .navigation {
       display: flex;
       align-items: center;

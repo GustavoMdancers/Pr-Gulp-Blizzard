@@ -225,6 +225,7 @@
 
 .games {
   display: flex;
+  margin-bottom: 10.7rem;
   .container {
     .head {
       display: flex;
@@ -265,107 +266,202 @@
       }
     }
     .cards {
-      .container {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        gap: 27px 48px;
-        width: 100%;
-        .card {
-          display: flex;
-          flex-direction: column;
-          position: relative;
-          overflow: hidden;
-          &:hover {
-            .image {
-              img {
-                &.background {
-                  transform: scale(1.1);
-                  filter: blur(1px);
-                }
-              }
-            }
-          }
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 47px 32px;
+      .card {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        overflow: hidden;
+        &:hover {
           .image {
-            position: relative;
-            width: 30.8rem;
-            height: 42.2rem;
-            overflow: hidden;
-            &::after {
-              content: "";
-              position: absolute;
-              display: block;
-              z-index: 1;
-              top: 0;
-              left: 0;
-              width: 100%;
-              height: 100%;
-              background: linear-gradient(rgba(0, 0, 0, 0), #000000c9);
-            }
             img {
-              position: absolute;
-              left: 0;
               &.icon {
-                z-index: 2;
-                left: 7.4rem;
-                top: 26.9rem;
+                transform: scale(1.2);
               }
               &.background {
-                top: 0;
-                left: 0;
-                transition: all 0.5s;
+                filter: blur(1px);
               }
             }
           }
         }
-        .text {
-          margin-top: 1.8rem;
-          h4 {
-            color: #e5e5e5;
-            font-size: 19.35px;
-            font-weight: 600;
-            line-height: normal;
+        .image {
+          position: relative;
+          width: 30.8rem;
+          height: 42.2rem;
+          overflow: hidden;
+          &::after {
+            content: "";
+            position: absolute;
+            display: block;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgba(0, 0, 0, 0), #000000c9);
           }
-          p {
-            color: #e5e5e5;
-            font-family: Poppins;
-            font-size: 15.05px;
-            font-weight: 400;
-            line-height: normal;
-            opacity: 0.8;
+          img {
+            position: absolute;
+            left: 0;
+            &.icon {
+              z-index: 2;
+              left: 7.4rem;
+              top: 26.9rem;
+              transition: all 0.5s;
+            }
+            &.background {
+              top: 0;
+              left: 0;
+              transition: all 0.5s;
+            }
           }
         }
-        .more {
+      }
+      .text {
+        margin-top: 1.8rem;
+        h4 {
+          color: #e5e5e5;
+          font-size: 19.35px;
+          font-weight: 600;
+          line-height: normal;
+        }
+        p {
+          color: #e5e5e5;
+          font-family: Poppins;
+          font-size: 15.05px;
+          font-weight: 400;
+          line-height: normal;
+          opacity: 0.8;
+        }
+      }
+      .more {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border: 1.613px solid #212428;
+        border-radius: 4.3px;
+        width: 301px;
+        height: 412.8px;
+        img {
+          margin-bottom: 3.6rem;
+          transition: all 0.5s;
+        }
+        span {
+          color: #fff;
+          text-align: center;
+          font-family: Poppins;
+          font-size: 17.2px;
+          font-weight: 600;
+          line-height: normal;
+          &::before {
+            content: url(../img/icon-4square-white.svg);
+            margin-right: 1.3rem;
+            transition: all 0.3s;
+          }
+        }
+        &:hover {
+          img {
+            transform: scale(1.2);
+          }
+        }
+      }
+    }
+  }
+}
+
+.download {
+  background: url(../img/background-section-download.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 85.2rem;
+  .container {
+    padding-top: 13.2rem;
+    display: flex;
+    .left {
+      .logo {
+        margin-bottom: 3rem;
+      }
+      h3 {
+        color: #fff;
+        font-family: Poppins;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 110.2%; /* 35.264px */
+        margin-bottom: 3rem;
+      }
+      ul {
+        margin-bottom: 5.3rem;
+        li {
           display: flex;
           align-items: center;
-          justify-content: center;
-          flex-direction: column;
-          border: 1.613px solid #212428;
-          border-radius: 4.3px;
-          width: 301px;
-          height: 412.8px;
+          align-content: center;
+          gap: 1.6rem;
+          &:not(:last-child) {
+            margin-bottom: 2.4rem;
+          }
           img {
-            margin-bottom: 3.6rem;
+            width: 18.008px;
+            height: 18.508px;
           }
           span {
-            color: #fff;
-            text-align: center;
+            color: #828792;
             font-family: Poppins;
-            font-size: 17.2px;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 178.2%; /* 32.076px */
+          }
+        }
+      }
+      .btn {
+        padding: 1.4rem 3.2rem;
+        color: #fff;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: normal;
+        align-items: center;
+        img {
+          margin-right: 8px;
+        }
+      }
+      .mobile {
+        display: flex;
+        gap: 1.8rem;
+        margin-top: 4.7rem;
+        span {
+          color: #e5e5e5;
+          font-family: Poppins;
+          font-size: 14px;
+          font-weight: 600;
+          line-height: normal;
+          strong {
             font-weight: 600;
             line-height: normal;
-            &::before {
-              content: url(../img/icon-4square-white.svg);
-              margin-right: 1.3rem;
-              transition: all 0.3s;
-            }
+            text-decoration-line: underline;
           }
-          &:hover {
-            span {
-              ::before {
-                transform: rotate(90deg);
-              }
-            }
-          }
+        }
+      }
+    }
+    .store {
+      position: relative;
+      width: 1145px;
+      height: 865px;
+      img {
+        position: absolute;
+        &.back {
+          position: absolute;
+          left: 11.3rem;
+          top: 0;
+        }
+        &.front {
+          z-index: 2;
+          left: 32rem;
+          top: 27rem;
         }
       }
     }
