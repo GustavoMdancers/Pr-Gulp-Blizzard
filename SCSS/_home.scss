@@ -457,11 +457,13 @@
           position: absolute;
           left: 11.3rem;
           top: 0;
+          animation: float 8s ease-in-out infinite;
         }
         &.front {
           z-index: 2;
           left: 32rem;
           top: 27rem;
+          animation: float 6s ease-in-out infinite;
         }
       }
     }
